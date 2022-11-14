@@ -1,5 +1,6 @@
 import com.bignerdranch.neythack.Coordinate
 import com.bignerdranch.neythack.Fightable
+import com.bignerdranch.neythack.extension.random as randomizer
 import java.io.File
 
 class Player(_name : String,
@@ -50,7 +51,7 @@ class Player(_name : String,
         return auraColor
     }
 
-    private fun selectHometown() = File("data/towns.txt").readText().split("\n").shuffled().first()
+    private fun selectHometown() = File("data/towns.txt").readText().split("\n").randomizer()
     override val diceCount = 3
     override val diceSides = 6
 
