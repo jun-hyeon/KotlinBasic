@@ -1,1 +1,0 @@
-/Users/choejunhyeon/Desktop/IntelijStudy/Interop/build/classes/kotlin/main/HeroKt.class
